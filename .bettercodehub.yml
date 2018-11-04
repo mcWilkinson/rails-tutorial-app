@@ -3,23 +3,23 @@ languages:
 - javascript
   production:
     include:
-      /app/.*
+      - /app/.*
     exclude:
-      /spec/.*
+      - /spec/.*
   test:
     include:
-      /spec/.*
+      - /spec/.*
     exclude:
-      /app/.*
+      - /app/.*
 - ruby
   production:
     include:
-      /app/.*
+      - /app/.*
     exclude:
-      /spec/.*
+      - /spec/.*
   test:
     include:
-      /spec/.*
+      - /spec/.*
     exclude:
-      /app/.*
+      - /app/.*
   
