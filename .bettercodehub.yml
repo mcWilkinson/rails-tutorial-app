@@ -6,17 +6,17 @@ languages:
 - name: javascript
   production:
     exclude:
-      - ./spec/*
-      - ./config/*
-      - ./db/*
-      - ./lib/*
-      - ./log/*
-      - ./public/*
-      - ./storage/*
-      - ./tmp/*
-      - ./vendor/*
-      - ./.git/*
-      - ./bin/*
+      - /spec/*
+      - /config/*
+      - /db/*
+      - /lib/*
+      - /log/*
+      - /public/*
+      - /storage/*
+      - /tmp/*
+      - /vendor/*
+      - /.git/*
+      - /bin/*
   test:
     include:
       - ./spec/*
@@ -24,17 +24,17 @@ languages:
 - name: ruby
   production:
     exclude:
-      - ./spec/*
-      - ./config/*
-      - ./db/*
-      - ./lib/*
-      - ./log/*
-      - ./public/*
-      - ./storage/*
-      - ./tmp/*
-      - ./vendor/*
-      - ./.git/*
-      - ./bin/*
+      - /spec/*
+      - /config/*
+      - /db/*
+      - /lib/*
+      - /log/*
+      - /public/*
+      - /storage/*
+      - /tmp/*
+      - /vendor/*
+      - /.git/*
+      - /bin/*
   test:
     include:
       - ./spec/*
