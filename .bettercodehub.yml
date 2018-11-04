@@ -7,13 +7,34 @@ languages:
   production:
     exclude:
       - ./spec/*
+      - ./config/*
+      - ./db/*
+      - ./lib/*
+      - ./log/*
+      - ./public/*
+      - ./storage/*
+      - ./tmp/*
+      - ./vendor/*
+      - ./.git/*
+      - ./bin/*
   test:
     include:
       - ./spec/*
+      
 - name: ruby
   production:
     exclude:
       - ./spec/*
+      - ./config/*
+      - ./db/*
+      - ./lib/*
+      - ./log/*
+      - ./public/*
+      - ./storage/*
+      - ./tmp/*
+      - ./vendor/*
+      - ./.git/*
+      - ./bin/*
   test:
     include:
       - ./spec/*
