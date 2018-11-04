@@ -1,0 +1,4 @@
+# Copy this over the database.yml for Travis builds
+test:
+  adapter: postgresql
+  database: travis_ci_test
