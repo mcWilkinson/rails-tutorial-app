@@ -1,13 +1,16 @@
 component_depth: 6
 languages:
 - javascript
+- ruby
+
+- name: javascript
   production:
     exclude:
       - ./spec/*
   test:
     include:
       - ./spec/*
-- ruby
+- name: ruby
   production:
     exclude:
       - ./spec/*
