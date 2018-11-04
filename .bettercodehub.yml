@@ -1,0 +1,9 @@
+exclude:
+- /db/.*
+- /config/.*
+production:
+  include: 
+    - /app/.*
+test: 
+  include:
+    - /spec/.*
