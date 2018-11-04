@@ -1,11 +1,14 @@
 language: ruby
-services: 
-  - postgresql
+services:
+- postgresql
 rvm:
-  - 2.4.0
+- 2.4.0
+notifications:
+  slack:
+    secure: eJ5an6KslPyIY+lEV2KkdZyphI6F/HGgu4EfyuvhXulp4eW3R/8ze6JJpVcvfW87KnHqXoSdE8DnKpk6HIBxiUYwVorEig+khc3sxAWsUEgRCykOLeNoBRO+5TeGyYZcFeZ/qlfbeVKS64jk7wEu1W8+32Ae13+iIdazGhRSIwqK6bCKMMp1QzPglEb+cGzQ1Bk2DJxP4gOJ3skl4yp2K1nfeUPlm5jCrSjD105NYMO9r0vQxi96wtqul/nuu0liI4WsQRR1CbsmIDCbbaMmVj8fmSClXoCTpOoo92sgxEf/3jFWAN1EoUKPTuhvEM3xRBtsjT3U7ezJUeGyIHSqrwuBxwnOrAHcuYV9wzgxfbgpmuivNunD+v8xcLJO7terWgkLYi9KYq3E+qrxL1vSJ+IsMc5fNlw69eW3LPdDmnQD8MScyj6WLExuSHdSSx1Zbc9Ljje6UyISMgAmGNZ32Q6S5iffZFju0rG/KJSb2aTI+ZvSOB8Ye63iEl0zJzfDKbZ5zwfxPWuBLYCSm9qnl0lbGSHB66XYQiCJ39XPTQlZkTNEumSmAnAUj0eGICHF+2m9tIUlvVIDcgrN2EZhgaVMMWmCSPIC16nBJIAcvPgVlqqYOAXXmrtbw+n/+QXzQHaAEsj4zxaoI0pdpQUribGBOGFRqZ6zUMg+TLunGTc=
 before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
-  - cp config/database.yml.travis config/database.yml
+- psql -c 'create database travis_ci_test;' -U postgres
+- cp config/database.yml.travis config/database.yml
 script:
-  - bundle exec rails db:migrate RAILS_ENV=test
-  - bundle exec rspec
+- bundle exec rails db:migrate RAILS_ENV=test
+- bundle exec rspec
