@@ -3,38 +3,14 @@ languages:
 - javascript
 - ruby
 
-- name: javascript
-  production:
-    exclude:
-      - /spec/*
-      - /config/*
-      - /db/*
-      - /lib/*
-      - /log/*
-      - /public/*
-      - /storage/*
-      - /tmp/*
-      - /vendor/*
-      - /.git/*
-      - /bin/*
-  test:
-    include:
-      - ./spec/*
-      
-- name: ruby
-  production:
-    exclude:
-      - /spec/*
-      - /config/*
-      - /db/*
-      - /lib/*
-      - /log/*
-      - /public/*
-      - /storage/*
-      - /tmp/*
-      - /vendor/*
-      - /.git/*
-      - /bin/*
-  test:
-    include:
-      - ./spec/*
+exclude:
+  - /config/*
+  - /db/*
+  - /lib/*
+  - /log/*
+  - /public/*
+  - /storage/*
+  - /tmp/*
+  - /vendor/*
+  - /.git/*
+  - /bin/*
