@@ -1,0 +1,16 @@
+component_depth: 6
+languages:
+- javascript
+- ruby
+
+exclude:
+  - /config/*
+  - /db/*
+  - /lib/*
+  - /log/*
+  - /public/*
+  - /storage/*
+  - /tmp/*
+  - /vendor/*
+  - /.git/*
+  - /bin/*
