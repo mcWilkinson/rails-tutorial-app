@@ -1,25 +1,4 @@
 component_depth: 6
 languages:
 - javascript
-  production:
-    include:
-      - /app/.*
-    exclude:
-      - /spec/.*
-  test:
-    include:
-      - /spec/.*
-    exclude:
-      - /app/.*
 - ruby
-  production:
-    include:
-      - /app/.*
-    exclude:
-      - /spec/.*
-  test:
-    include:
-      - /spec/.*
-    exclude:
-      - /app/.*
-  
